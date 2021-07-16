@@ -1,0 +1,282 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	font-family: Segoe UI;
+	margin: 0;
+	display: block;
+}
+.container{
+	width: 1170px;
+	max-width: 100%;
+	margin: 0 auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+.full{
+	width: 100%;
+}
+.left{
+	float: left;
+}
+#Busca{
+	.box-busca{
+		width: 100%;
+		background-color:#FEAF3D;
+	}
+	.box1{
+		width: 50%;
+		display: block;
+		float: left;
+	}
+	.box2{
+		width: 50%;
+		display: block;
+		float: left;
+	}
+	#divBusca{
+		background-color:white;
+		border-radius:10px;
+		width:268px;
+		margin: 20px 220px;
+		height:32px;
+
+		#txtBusca{
+			float:left;
+			background-color:transparent;
+			padding-left:5px;
+			font-size:18px;
+			border:none;
+			height:32px;
+			width:191px;
+		}
+
+		#btnBusca{
+			border: none;
+			float: left;
+			height: 32px;
+			border-radius: 7px;
+			width: 77px;
+			font-weight: bold;
+			background: #6E4B87;
+			color: white;
+			margin-left: 0;
+			cursor: pointer;
+		}
+
+		#divBusca img{
+			float:left;
+		}
+		::-webkit-input-placeholder  { 
+			font-size: 14px;
+			padding-left:15px;
+		}
+		input:-moz-placeholder { 
+			font-size: 14px;
+			padding-left:15px;
+		}
+		textarea:-moz-placeholder {
+			font-size: 14px;
+			padding-left:15px;
+		}
+	}
+	.box2{		
+		select{
+			background-color: white;
+			border-radius: 10px;
+			width: 268px;
+			margin: 20px 40px;
+			height: 32px;
+		}
+		p{
+			color: white;
+			margin: 20px 0;
+		}
+	}
+}
+.box-card{
+	position: relative;
+	display: block;
+	.info-card{
+		display: block;
+		position: relative;
+		float: left;
+		width: 22%;
+		padding: 20px;
+		border: solid 1px;
+		border-radius: 30px;
+		margin: 0 12px;
+		cursor: pointer;
+		margin-top: 30px;
+	}
+	.info-card:hover .botao {
+		display: block;
+		transition: 3s;
+	}
+	.prazo-curto{		
+		background: #422755;
+		color: white;
+		position: absolute;
+		margin: 0px;
+		left: -10px;
+		.prazo{
+			margin: 3px;
+			position:relative;
+		}
+	}
+	.prazo-esgotado{		
+		background: #ff0000;
+		color: white;
+		position: absolute;
+		margin: 0px;
+		top: 20px;
+		left: -10px;
+		.esgotado{
+			margin: 3px;
+			position:relative;
+		}
+	}
+	.capa{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.titulo{
+		font-weight: bold;
+	}
+	.descricao{
+		font-size: 12px;
+	}
+	.prazo{
+		font-weight: bold;
+	}
+	.valor{
+		color: red;
+	}
+	.data-conclusao{
+		font-size: 10px;
+	}
+	.botao{
+		display: none;
+	}
+	.btn-concluir{
+		background: #6e4b87;
+		border: none;
+		color: white;
+		width: 100%;
+		padding: 10px 30px;
+		position: relative;
+		margin-bottom: 10px;
+	}
+	.btn-alterar-prazo{
+		background: red;
+		border: none;
+		color: white;
+		width: 100%;
+		padding: 10px 30px;
+		position: relative;
+	}
+}
+.box-botao-ver-mais{
+	.btn-ver-mais{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+		background: #6e4b87;
+		border: none;
+		color: white;
+		padding: 10px 30px;
+		position: relative;
+		margin-bottom: 10px;
+		cursor: pointer;
+
+	}
+	
+}
+.box-receber-dicas{
+	
+	background: #e5e5e5;
+	padding: 20px;
+	border-radius: 10px;
+	max-width: 80%;
+	display: block;
+	margin-right: auto;
+	height: 150px;
+	margin-left: auto;
+	margin-top: 40px;
+	margin-bottom: 50px;
+
+	p{
+		color: #6e4b87;
+	}
+	.campo-form{
+		width: 40%;
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+	input{
+		width: 70%;
+		height: 30px;
+		border-radius: 5px;
+		border-color: transparent;
+	}
+	.cadastrar{
+		display: block;
+		margin-left: auto;
+		margin-top: 15px;
+		background: #6e4b87;
+		border: none;
+		color: white;
+		padding: 10px 30px;
+		position: relative;
+		margin-bottom: 0;
+		cursor: pointer;
+		right: 25%;
+		position: absolute;
+	}
+}
+@media (max-width: 767px){
+	.box-card .info-card{
+		width: 80%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		float: initial;
+	}
+	#Busca{
+		.box1{
+			width: 100%;
+		}
+		.box2{
+			width: 100%;
+			select{
+				margin: 15px;
+				width: 50%;
+			}			
+		}	
+		#divBusca{
+			margin: 20px 50px;
+		} 
+	}
+	.box-receber-dicas{
+		height: 320px;
+	}
+	.box-receber-dicas .campo-form{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.box-receber-dicas .cadastrar{
+		position:relative;
+		margin-top: 10px;
+	}
+	.box-receber-dicas input{
+		width: 100%;
+	}
+}

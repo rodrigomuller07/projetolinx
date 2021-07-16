@@ -1,0 +1,233 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: Segoe UI;
+  margin: 0;
+  display: block; }
+
+.container {
+  width: 1170px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+.full {
+  width: 100%; }
+
+.left {
+  float: left; }
+
+#Busca .box-busca {
+  width: 100%;
+  background-color: #FEAF3D; }
+#Busca .box1 {
+  width: 50%;
+  display: block;
+  float: left; }
+#Busca .box2 {
+  width: 50%;
+  display: block;
+  float: left; }
+#Busca #divBusca {
+  background-color: white;
+  border-radius: 10px;
+  width: 268px;
+  margin: 20px 220px;
+  height: 32px; }
+  #Busca #divBusca #txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 191px; }
+  #Busca #divBusca #btnBusca {
+    border: none;
+    float: left;
+    height: 32px;
+    border-radius: 7px;
+    width: 77px;
+    font-weight: bold;
+    background: #6E4B87;
+    color: white;
+    margin-left: 0;
+    cursor: pointer; }
+  #Busca #divBusca #divBusca img {
+    float: left; }
+  #Busca #divBusca ::-webkit-input-placeholder {
+    font-size: 14px;
+    padding-left: 15px; }
+  #Busca #divBusca input:-moz-placeholder {
+    font-size: 14px;
+    padding-left: 15px; }
+  #Busca #divBusca textarea:-moz-placeholder {
+    font-size: 14px;
+    padding-left: 15px; }
+#Busca .box2 select {
+  background-color: white;
+  border-radius: 10px;
+  width: 268px;
+  margin: 20px 40px;
+  height: 32px; }
+#Busca .box2 p {
+  color: white;
+  margin: 20px 0; }
+
+.box-card {
+  position: relative;
+  display: block; }
+  .box-card .info-card {
+    display: block;
+    position: relative;
+    float: left;
+    width: 22%;
+    padding: 20px;
+    border: solid 1px;
+    border-radius: 30px;
+    margin: 0 12px;
+    cursor: pointer;
+    margin-top: 30px; }
+  .box-card .info-card:hover .botao {
+    display: block;
+    transition: 3s; }
+  .box-card .prazo-curto {
+    background: #422755;
+    color: white;
+    position: absolute;
+    margin: 0px;
+    left: -10px; }
+    .box-card .prazo-curto .prazo {
+      margin: 3px;
+      position: relative; }
+  .box-card .prazo-esgotado {
+    background: #ff0000;
+    color: white;
+    position: absolute;
+    margin: 0px;
+    top: 20px;
+    left: -10px; }
+    .box-card .prazo-esgotado .esgotado {
+      margin: 3px;
+      position: relative; }
+  .box-card .capa {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .box-card .titulo {
+    font-weight: bold; }
+  .box-card .descricao {
+    font-size: 12px; }
+  .box-card .prazo {
+    font-weight: bold; }
+  .box-card .valor {
+    color: red; }
+  .box-card .data-conclusao {
+    font-size: 10px; }
+  .box-card .botao {
+    display: none; }
+  .box-card .btn-concluir {
+    background: #6e4b87;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 10px 30px;
+    position: relative;
+    margin-bottom: 10px; }
+  .box-card .btn-alterar-prazo {
+    background: red;
+    border: none;
+    color: white;
+    width: 100%;
+    padding: 10px 30px;
+    position: relative; }
+
+.box-botao-ver-mais .btn-ver-mais {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background: #6e4b87;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer; }
+
+.box-receber-dicas {
+  background: #e5e5e5;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  display: block;
+  margin-right: auto;
+  height: 150px;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 50px; }
+  .box-receber-dicas p {
+    color: #6e4b87; }
+  .box-receber-dicas .campo-form {
+    width: 40%;
+    float: left;
+    margin: 0;
+    padding: 0; }
+  .box-receber-dicas input {
+    width: 70%;
+    height: 30px;
+    border-radius: 5px;
+    border-color: transparent; }
+  .box-receber-dicas .cadastrar {
+    display: block;
+    margin-left: auto;
+    margin-top: 15px;
+    background: #6e4b87;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    position: relative;
+    margin-bottom: 0;
+    cursor: pointer;
+    right: 25%;
+    position: absolute; }
+
+@media (max-width: 767px) {
+  .box-card .info-card {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: initial; }
+
+  #Busca .box1 {
+    width: 100%; }
+  #Busca .box2 {
+    width: 100%; }
+    #Busca .box2 select {
+      margin: 15px;
+      width: 50%; }
+  #Busca #divBusca {
+    margin: 20px 50px; }
+
+  .box-receber-dicas {
+    height: 320px; }
+
+  .box-receber-dicas .campo-form {
+    width: 100%;
+    margin-bottom: 10px; }
+
+  .box-receber-dicas .cadastrar {
+    position: relative;
+    margin-top: 10px; }
+
+  .box-receber-dicas input {
+    width: 100%; } }
+
+/*# sourceMappingURL=padrao.css.map */

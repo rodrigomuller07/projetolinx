@@ -1,0 +1,1 @@
+sass --watch dev/sass/padrao.scss:dist/css/padrao.css
